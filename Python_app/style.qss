@@ -1,0 +1,118 @@
+/* General widget styling */
+QWidget {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* QLabel styling */
+QLabel {
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* QPushButton styling */
+QPushButton {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+QPushButton:hover {
+    background-color: #005a9e;
+}
+QPushButton:pressed {
+    background-color: #003d66;
+}
+
+/* QLineEdit styling */
+QLineEdit {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+QLineEdit:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+}
+
+/* QComboBox styling */
+QComboBox {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+QComboBox:drop-down {
+    border: none;
+}
+QComboBox:down-arrow {
+    image: url(down_arrow_icon.png); /* Ensure you have an icon for the drop-down arrow */
+}
+QComboBox QAbstractItemView {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    selection-background-color: #0078d7;
+    selection-color: white;
+}
+
+/* QScrollBar styling */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f0f0f0;
+    width: 12px;
+    margin: 15px 0 15px 0;
+}
+QScrollBar::handle:vertical {
+    background-color: #ccc;
+    min-height: 20px;
+    border-radius: 6px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: #f0f0f0;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #f0f0f0;
+    height: 12px;
+    margin: 0 15px 0 15px;
+}
+QScrollBar::handle:horizontal {
+    background-color: #ccc;
+    min-width: 20px;
+    border-radius: 6px;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background-color: #f0f0f0;
+}
+
+/* QCheckBox styling */
+QCheckBox {
+    spacing: 5px;
+}
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+QCheckBox::indicator:unchecked {
+    border: 1px solid #0078d7;
+    background-color: #fff;
+    border-radius: 3px;
+}
+QCheckBox::indicator:checked {
+    background-color: #0078d7;
+    image: url(check_icon.png); /* Ensure you have an icon for the check mark */
+}
